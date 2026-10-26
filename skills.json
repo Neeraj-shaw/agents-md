@@ -1,0 +1,1390 @@
+{
+ "generated_for": "agents-md-pro",
+ "upstream_commits": {
+  "addyosmani_agent-skills": "aeac41d4d0",
+  "obra_superpowers": "2ce8aa15d0",
+  "wshobson_agents": "0874a27b17",
+  "getsentry_skills": "d12f250460",
+  "supabase_agent-skills": "c9be0e931b",
+  "trailofbits_skills": "196a9073ab",
+  "hashicorp_agent-skills": "f706481af9",
+  "nextlevelbuilder_ui-ux-pro-max-skill": "d14efff8ed",
+  "cloudflare_security-audit-skill": "c1c8a8c147",
+  "anthropics_skills": "dbd4588f9e",
+  "vercel-labs_agent-skills": "063bee94c3"
+ },
+ "agents": {
+  "explore": [
+   {
+    "skill": "audit-context-building",
+    "load_when": "the user needs deep, line-by-line understanding of how a module really works, not just where it is",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/audit-context-building/skills/audit-context-building",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "variant-analysis",
+    "load_when": "you must find every other place that repeats a known pattern, bug, or API misuse",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/variant-analysis/skills/variant-analysis",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "context-engineering",
+    "load_when": "the repo is large and you must decide what to read vs skip",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/context-engineering",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   }
+  ],
+  "analyser": [
+   {
+    "skill": "interview-me",
+    "load_when": "the request is vague and you need to extract what the user actually wants before analyzing",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/interview-me",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "spec-driven-development",
+    "load_when": "the output should become a written spec or acceptance criteria",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/spec-driven-development",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "doubt-driven-development",
+    "load_when": "a conclusion is about to be reported and you want a fresh-context adversarial check first",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/doubt-driven-development",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "distributed-tracing",
+    "load_when": "a request crosses several services and you must follow it end to end",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/observability-monitoring/skills/distributed-tracing",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "observability-and-instrumentation",
+    "load_when": "existing logs/metrics are too thin to explain behavior and you must say what to add",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/observability-and-instrumentation",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "postmortem-writing",
+    "load_when": "the analysis is a post-incident root cause with timeline",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/incident-response/skills/postmortem-writing",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "data-quality-frameworks",
+    "load_when": "the question is about bad, missing, or inconsistent data",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/data-engineering/skills/data-quality-frameworks",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "code-analyser": [
+   {
+    "skill": "audit-context-building",
+    "load_when": "you need ultra-granular understanding of a module before judging it",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/audit-context-building/skills/audit-context-building",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "sharp-edges",
+    "load_when": "you are assessing APIs, configs, or defaults that invite misuse",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/sharp-edges/skills/sharp-edges",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "variant-analysis",
+    "load_when": "you found one defect pattern and must find all siblings",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/variant-analysis/skills/variant-analysis",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "semgrep",
+    "load_when": "a static scan with rules would give faster, broader coverage than manual reading",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/static-analysis/skills/semgrep",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "performance-optimization",
+    "load_when": "hotspots must be classified as real performance risks",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/performance-optimization",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "python-anti-patterns",
+    "load_when": "the target is Python and you are looking for common defect patterns",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/python-anti-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "ai-debt-detector",
+    "load_when": "the code looks AI-generated (duplicated helpers, hollow abstractions, unused scaffolding)",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/skill-forge-essentials/skills/ai-debt-detector",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "research": [
+   {
+    "skill": "source-driven-development",
+    "load_when": "an implementation choice must be grounded in the official documentation for the exact version in use",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/source-driven-development",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "doubt-driven-development",
+    "load_when": "a recommendation is about to be stated and needs an adversarial recheck",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/doubt-driven-development",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "context-engineering",
+    "load_when": "you must keep a long research thread inside a small context budget",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/context-engineering",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "avoid-ai-writing",
+    "load_when": "the final report reads generic or machine-like and needs tightening",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/avoid-ai-writing/skills/avoid-ai-writing",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "decision-maker": [
+   {
+    "skill": "doubt-driven-development",
+    "load_when": "before finalizing, run a fresh-context adversarial review of the recommendation",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/doubt-driven-development",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "architecture-decision-records",
+    "load_when": "the decision should be written down as an ADR",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/documentation-generation/skills/architecture-decision-records",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "idea-refine",
+    "load_when": "the options are still vague and need sharpening before they can be compared",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/idea-refine",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "constraint-driven-development",
+    "load_when": "the decision depends on a quality bar or constraint that is not yet written down",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/constraint-driven-development",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   }
+  ],
+  "architect": [
+   {
+    "skill": "architecture-patterns",
+    "load_when": "choosing among layered, clean, hexagonal, or domain-driven structures",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/backend-development/skills/architecture-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "architecture-decision-records",
+    "load_when": "recording the decision and rejected alternatives",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/documentation-generation/skills/architecture-decision-records",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "api-and-interface-design",
+    "load_when": "defining module boundaries or public contracts",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/api-and-interface-design",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "microservices-patterns",
+    "load_when": "service boundaries or inter-service communication are on the table",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/backend-development/skills/microservices-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "saga-orchestration",
+    "load_when": "a business process spans several services or aggregates and needs consistency",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/backend-development/skills/saga-orchestration",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "cqrs-implementation",
+    "load_when": "read and write models have different scaling or shape needs",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/backend-development/skills/cqrs-implementation",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "event-store-design",
+    "load_when": "event sourcing is being considered or used",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/backend-development/skills/event-store-design",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "constraint-driven-development",
+    "load_when": "the quality bar or non-negotiable constraints must be made explicit",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/constraint-driven-development",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "deprecation-and-migration",
+    "load_when": "the design involves retiring a system, API, or schema",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/deprecation-and-migration",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "stride-analysis-patterns",
+    "load_when": "the design crosses trust boundaries and needs a threat model",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/security-scanning/skills/stride-analysis-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "planner": [
+   {
+    "skill": "planning-and-task-breakdown",
+    "load_when": "breaking a spec or clear requirement into ordered tasks",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/planning-and-task-breakdown",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "writing-plans",
+    "load_when": "the plan must be detailed enough for an engineer with no context to execute",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/writing-plans",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "spec-driven-development",
+    "load_when": "no written spec exists yet for a significant change",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/spec-driven-development",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "interview-me",
+    "load_when": "the goal is ambiguous and you need to extract intent before planning",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/interview-me",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "incremental-implementation",
+    "load_when": "slicing work into thin, shippable, verifiable increments",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/incremental-implementation",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "parallel-feature-development",
+    "load_when": "tasks can run in parallel and need file-ownership boundaries",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/agent-teams/skills/parallel-feature-development",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "backend": [
+   {
+    "skill": "api-design-principles",
+    "load_when": "designing REST or GraphQL resources, errors, pagination, versioning",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/backend-development/skills/api-design-principles",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "api-and-interface-design",
+    "load_when": "defining a module or public interface contract",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/api-and-interface-design",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "auth-implementation-patterns",
+    "load_when": "touching login, sessions, JWT, OAuth2, or permissions",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/developer-essentials/skills/auth-implementation-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "nodejs-backend-patterns",
+    "load_when": "the service is Node.js (Express, Fastify, NestJS style)",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/javascript-typescript/skills/nodejs-backend-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "fastapi-templates",
+    "load_when": "the service is Python FastAPI",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/api-scaffolding/skills/fastapi-templates",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "python-background-jobs",
+    "load_when": "queues, workers, or scheduled jobs in Python",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/python-background-jobs",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "python-resilience",
+    "load_when": "retries, backoff, timeouts, circuit breakers in Python",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/python-resilience",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "error-handling-patterns",
+    "load_when": "designing an error model across layers",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/developer-essentials/skills/error-handling-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "openapi-spec-generation",
+    "load_when": "the API needs or already has an OpenAPI spec",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/documentation-generation/skills/openapi-spec-generation",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "observability-and-instrumentation",
+    "load_when": "adding logs, metrics, traces, health checks",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/observability-and-instrumentation",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "performance-optimization",
+    "load_when": "a slow endpoint or query needs measurement-first tuning",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/performance-optimization",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "security-and-hardening",
+    "load_when": "handling untrusted input, secrets, uploads, or external calls",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/security-and-hardening",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   }
+  ],
+  "database": [
+   {
+    "skill": "supabase-postgres-best-practices",
+    "load_when": "any PostgreSQL work: queries, indexes, RLS, connections, locking, schema",
+    "repo": "https://github.com/supabase/agent-skills",
+    "path": "skills/supabase-postgres-best-practices",
+    "commit": "c9be0e931b",
+    "license": "MIT"
+   },
+   {
+    "skill": "postgresql-table-design",
+    "load_when": "designing or reviewing a PostgreSQL schema",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/database-design/skills/postgresql-table-design",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "sql-optimization-patterns",
+    "load_when": "a query is slow or an EXPLAIN plan must be read",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/developer-essentials/skills/sql-optimization-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "database-migration",
+    "load_when": "writing or sequencing migrations, especially on live tables",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/framework-migration/skills/database-migration",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "supabase",
+    "load_when": "the project uses Supabase (auth, RLS, edge functions, client libraries)",
+    "repo": "https://github.com/supabase/agent-skills",
+    "path": "skills/supabase",
+    "commit": "c9be0e931b",
+    "license": "MIT"
+   }
+  ],
+  "ui-king": [
+   {
+    "skill": "frontend-design",
+    "load_when": "starting a new UI or reshaping one with no fixed direction; avoids generic templated output",
+    "repo": "https://github.com/anthropics/skills",
+    "path": "skills/frontend-design",
+    "commit": "dbd4588f9e",
+    "license": "Apache-2.0 (per-skill LICENSE.txt)"
+   },
+   {
+    "skill": "ui-ux-pro-max",
+    "load_when": "choosing style, palette, typography, layout, and UX rules for web or mobile",
+    "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "path": ".claude/skills/ui-ux-pro-max",
+    "commit": "d14efff8ed",
+    "license": "MIT"
+   },
+   {
+    "skill": "vercel-react-best-practices",
+    "load_when": "writing or reviewing React or Next.js for performance",
+    "repo": "https://github.com/vercel-labs/agent-skills",
+    "path": "skills/react-best-practices",
+    "commit": "063bee94c3",
+    "license": "MIT (repo README / skill front matter)"
+   },
+   {
+    "skill": "vercel-composition-patterns",
+    "load_when": "components are accumulating boolean props or need a scalable API",
+    "repo": "https://github.com/vercel-labs/agent-skills",
+    "path": "skills/composition-patterns",
+    "commit": "063bee94c3",
+    "license": "MIT (repo README / skill front matter)"
+   },
+   {
+    "skill": "web-design-guidelines",
+    "load_when": "auditing a UI against interface and accessibility guidelines",
+    "repo": "https://github.com/vercel-labs/agent-skills",
+    "path": "skills/web-design-guidelines",
+    "commit": "063bee94c3",
+    "license": "MIT (repo README / skill front matter)"
+   },
+   {
+    "skill": "frontend-ui-engineering",
+    "load_when": "building production-quality accessible, responsive UI end to end",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/frontend-ui-engineering",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "accessibility-compliance",
+    "load_when": "implementing WCAG 2.2 behavior, ARIA, focus, mobile accessibility",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/ui-design/skills/accessibility-compliance",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "wcag-audit-patterns",
+    "load_when": "auditing a screen for accessibility failures with remediation",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/accessibility-compliance/skills/wcag-audit-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "responsive-design",
+    "load_when": "container queries, fluid type, grid, mobile-first layout",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/ui-design/skills/responsive-design",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "tailwind-design-system",
+    "load_when": "the project uses Tailwind and needs tokens or a component library",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/frontend-mobile-development/skills/tailwind-design-system",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "design-system-patterns",
+    "load_when": "creating or extending tokens, theming, dark mode, component architecture",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/ui-design/skills/design-system-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "interaction-design",
+    "load_when": "microinteractions, motion, transitions, feedback",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/ui-design/skills/interaction-design",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "react-state-management",
+    "load_when": "choosing or fixing client and server state",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/frontend-mobile-development/skills/react-state-management",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "nextjs-app-router-patterns",
+    "load_when": "the project uses the Next.js App Router",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/frontend-mobile-development/skills/nextjs-app-router-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "webapp-testing",
+    "load_when": "you must verify the UI in a real browser with Playwright",
+    "repo": "https://github.com/anthropics/skills",
+    "path": "skills/webapp-testing",
+    "commit": "dbd4588f9e",
+    "license": "Apache-2.0 (per-skill LICENSE.txt)"
+   }
+  ],
+  "coder": [
+   {
+    "skill": "incremental-implementation",
+    "load_when": "implementing any change touching more than one file: build in thin verifiable slices",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/incremental-implementation",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "test-driven-development",
+    "load_when": "implementing a feature or bug fix: write the failing test first",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/test-driven-development",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "verification-before-completion",
+    "load_when": "before saying anything is done, fixed, or passing",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/verification-before-completion",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "code-simplification",
+    "load_when": "a change works but is more complex than it needs to be",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/code-simplification",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "git-workflow-and-versioning",
+    "load_when": "committing, branching, or structuring changes (commit only when asked)",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/git-workflow-and-versioning",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "error-handling-patterns",
+    "load_when": "designing how errors propagate and are reported",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/developer-essentials/skills/error-handling-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "typescript-advanced-types",
+    "load_when": "TypeScript generics, conditional types, or type-level modeling",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/javascript-typescript/skills/typescript-advanced-types",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "modern-javascript-patterns",
+    "load_when": "modern JavaScript idioms and async patterns",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/javascript-typescript/skills/modern-javascript-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "modern-python",
+    "load_when": "Python project tooling (uv, ruff, ty) and structure",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/modern-python/skills/modern-python",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "python-code-style",
+    "load_when": "Python style, naming, docstrings, linting",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/python-code-style",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "python-type-safety",
+    "load_when": "Python type hints, generics, protocols, strict checking",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/python-type-safety",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "python-design-patterns",
+    "load_when": "structuring Python modules and responsibilities",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/python-design-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "async-python-patterns",
+    "load_when": "asyncio and concurrent Python",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/async-python-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "go-concurrency-patterns",
+    "load_when": "goroutines, channels, context in Go",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/systems-programming/skills/go-concurrency-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "bash-defensive-patterns",
+    "load_when": "writing shell scripts that must be safe and robust",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/shell-scripting/skills/bash-defensive-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "debugger": [
+   {
+    "skill": "systematic-debugging",
+    "load_when": "any bug, test failure, or unexpected behavior: load before proposing a fix",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/systematic-debugging",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "debugging-and-error-recovery",
+    "load_when": "tests fail, builds break, or behavior does not match expectations",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/debugging-and-error-recovery",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "debugging-strategies",
+    "load_when": "you need profiling, bisecting, or tool-specific debugging techniques",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/developer-essentials/skills/debugging-strategies",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "parallel-debugging",
+    "load_when": "several competing hypotheses can be tested independently",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/agent-teams/skills/parallel-debugging",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "test-driven-development",
+    "load_when": "writing the regression test that must fail before the fix",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/test-driven-development",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "verification-before-completion",
+    "load_when": "before claiming the bug is fixed",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/verification-before-completion",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "distributed-tracing",
+    "load_when": "the failure spans several services",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/observability-monitoring/skills/distributed-tracing",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "tester": [
+   {
+    "skill": "test-driven-development",
+    "load_when": "writing tests first for a feature or bug fix",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/test-driven-development",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "verification-before-completion",
+    "load_when": "before reporting that tests pass",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/verification-before-completion",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "python-testing-patterns",
+    "load_when": "pytest, fixtures, mocking, parametrization",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/python-testing-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "javascript-testing-patterns",
+    "load_when": "Jest, Vitest, Testing Library",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/javascript-typescript/skills/javascript-testing-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "e2e-testing-patterns",
+    "load_when": "Playwright or Cypress end-to-end suites and flaky E2E tests",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/developer-essentials/skills/e2e-testing-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "webapp-testing",
+    "load_when": "exercising a local web app in a real browser with Playwright",
+    "repo": "https://github.com/anthropics/skills",
+    "path": "skills/webapp-testing",
+    "commit": "dbd4588f9e",
+    "license": "Apache-2.0 (per-skill LICENSE.txt)"
+   },
+   {
+    "skill": "property-based-testing",
+    "load_when": "functions with invariants, parsers, serializers, round trips",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/property-based-testing/skills/property-based-testing",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "mutation-testing",
+    "load_when": "you need to measure whether assertions would catch real bugs",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/mutation-testing/skills/mutation-testing",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "bats-testing-patterns",
+    "load_when": "testing shell scripts",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/shell-scripting/skills/bats-testing-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "reviewer": [
+   {
+    "skill": "code-review-and-quality",
+    "load_when": "a pre-merge review across correctness, readability, architecture, security, performance",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/code-review-and-quality",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "code-review-excellence",
+    "load_when": "you need constructive, well-calibrated feedback and review structure",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/developer-essentials/skills/code-review-excellence",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "code-review",
+    "load_when": "reviewing a pull request against team engineering practices",
+    "repo": "https://github.com/getsentry/skills",
+    "path": "skills/code-review",
+    "commit": "d12f250460",
+    "license": "Apache-2.0"
+   },
+   {
+    "skill": "find-bugs",
+    "load_when": "hunting bugs and vulnerabilities in local branch changes",
+    "repo": "https://github.com/getsentry/skills",
+    "path": "skills/find-bugs",
+    "commit": "d12f250460",
+    "license": "Apache-2.0"
+   },
+   {
+    "skill": "multi-reviewer-patterns",
+    "load_when": "the change is large and should be reviewed across several dimensions with deduplication",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/agent-teams/skills/multi-reviewer-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "differential-review",
+    "load_when": "the diff touches security-sensitive code and needs blast-radius analysis",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/differential-review/skills/differential-review",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "python-anti-patterns",
+    "load_when": "the change is Python",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/python-development/skills/python-anti-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "ai-debt-detector",
+    "load_when": "the change looks machine-generated (hollow abstractions, duplicated helpers, unused code)",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/skill-forge-essentials/skills/ai-debt-detector",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "security-reviewer": [
+   {
+    "skill": "security-audit",
+    "load_when": "PRIMARY (Cloudflare). Any security audit, vulnerability hunt, pen-test style review, or security question; use its guidance mode by default and its full six-phase audit only when the user explicitly asks to audit or wants report artifacts",
+    "repo": "https://github.com/cloudflare/security-audit-skill",
+    "path": "skills/security-audit",
+    "commit": "c1c8a8c147",
+    "license": "MIT"
+   },
+   {
+    "skill": "security-review",
+    "load_when": "a code security review for injection, authz, crypto, secrets, and framework-specific flaws",
+    "repo": "https://github.com/getsentry/skills",
+    "path": "skills/security-review",
+    "commit": "d12f250460",
+    "license": "Apache-2.0"
+   },
+   {
+    "skill": "security-and-hardening",
+    "load_when": "hardening handlers, input validation, auth, and secrets",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/security-and-hardening",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "differential-review",
+    "load_when": "reviewing a change set for security impact and regressions",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/differential-review/skills/differential-review",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "sharp-edges",
+    "load_when": "evaluating dangerous APIs, configs, and defaults that invite misuse",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/sharp-edges/skills/sharp-edges",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "semgrep",
+    "load_when": "running a rule-based static scan across the codebase",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/static-analysis/skills/semgrep",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "variant-analysis",
+    "load_when": "a vulnerability was found and every variant must be located",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/variant-analysis/skills/variant-analysis",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "supply-chain-risk-auditor",
+    "load_when": "auditing dependencies for advisories, abandonment, and install-script risk",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "gha-security-review",
+    "load_when": "reviewing GitHub Actions workflows for injection and privilege problems",
+    "repo": "https://github.com/getsentry/skills",
+    "path": "skills/gha-security-review",
+    "commit": "d12f250460",
+    "license": "Apache-2.0"
+   },
+   {
+    "skill": "agentic-actions-auditor",
+    "load_when": "workflows invoke AI agents with untrusted input",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/agentic-actions-auditor/skills/agentic-actions-auditor",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "secret-serialization",
+    "load_when": "checking whether secrets can leak via serializers, logs, or API responses",
+    "repo": "https://github.com/getsentry/skills",
+    "path": "skills/secret-serialization",
+    "commit": "d12f250460",
+    "license": "Apache-2.0"
+   },
+   {
+    "skill": "stride-analysis-patterns",
+    "load_when": "threat-modeling a new feature or system",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/security-scanning/skills/stride-analysis-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "attack-tree-construction",
+    "load_when": "mapping attack paths to a critical asset",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/security-scanning/skills/attack-tree-construction",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "threat-mitigation-mapping",
+    "load_when": "mapping each threat to a control and prioritizing",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/security-scanning/skills/threat-mitigation-mapping",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "sast-configuration",
+    "load_when": "setting up or tuning SAST in CI",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/security-scanning/skills/sast-configuration",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "secrets-management",
+    "load_when": "reviewing how secrets are stored, rotated, and injected",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/cicd-automation/skills/secrets-management",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "auth-implementation-patterns",
+    "load_when": "reviewing authentication and authorization design",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/developer-essentials/skills/auth-implementation-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "k8s-security-policies",
+    "load_when": "reviewing Kubernetes manifests and policies",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/kubernetes-operations/skills/k8s-security-policies",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "devops": [
+   {
+    "skill": "github-actions-templates",
+    "load_when": "writing or fixing GitHub Actions workflows",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/cicd-automation/skills/github-actions-templates",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "gitlab-ci-patterns",
+    "load_when": "writing or fixing GitLab CI pipelines",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/cicd-automation/skills/gitlab-ci-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "deployment-pipeline-design",
+    "load_when": "designing multi-stage pipelines with gates and rollbacks",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/cicd-automation/skills/deployment-pipeline-design",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "ci-cd-and-automation",
+    "load_when": "setting up build, test, and deploy automation with quality gates",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/ci-cd-and-automation",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "shipping-and-launch",
+    "load_when": "preparing a production launch with checks, monitoring, and rollback",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/shipping-and-launch",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "terraform-module-library",
+    "load_when": "writing reusable Terraform modules",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/cloud-infrastructure/skills/terraform-module-library",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "terraform-style-guide",
+    "load_when": "writing Terraform HCL to HashiCorp conventions",
+    "repo": "https://github.com/hashicorp/agent-skills",
+    "path": "plugins/terraform/skills/terraform-style-guide",
+    "commit": "f706481af9",
+    "license": "MPL-2.0"
+   },
+   {
+    "skill": "terraform-test",
+    "load_when": "testing Terraform configurations",
+    "repo": "https://github.com/hashicorp/agent-skills",
+    "path": "plugins/terraform/skills/terraform-test",
+    "commit": "f706481af9",
+    "license": "MPL-2.0"
+   },
+   {
+    "skill": "k8s-manifest-generator",
+    "load_when": "writing Kubernetes manifests",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/kubernetes-operations/skills/k8s-manifest-generator",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "helm-chart-scaffolding",
+    "load_when": "creating or organizing Helm charts",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/kubernetes-operations/skills/helm-chart-scaffolding",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "gitops-workflow",
+    "load_when": "ArgoCD or Flux based delivery",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/kubernetes-operations/skills/gitops-workflow",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "prometheus-configuration",
+    "load_when": "metrics collection and alert rules",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/observability-monitoring/skills/prometheus-configuration",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "grafana-dashboards",
+    "load_when": "building dashboards",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/observability-monitoring/skills/grafana-dashboards",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "slo-implementation",
+    "load_when": "defining SLIs, SLOs, and error budgets",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/observability-monitoring/skills/slo-implementation",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "incident-runbook-templates",
+    "load_when": "writing operational runbooks",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/incident-response/skills/incident-runbook-templates",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "postmortem-writing",
+    "load_when": "blameless postmortems",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/incident-response/skills/postmortem-writing",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "secrets-management",
+    "load_when": "handling secrets in CI/CD and runtime",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/cicd-automation/skills/secrets-management",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "cost-optimization",
+    "load_when": "reducing cloud spend with rightsizing and commitments",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/cloud-infrastructure/skills/cost-optimization",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "devcontainer-setup",
+    "load_when": "creating reproducible dev containers",
+    "repo": "https://github.com/trailofbits/skills",
+    "path": "plugins/devcontainer-setup/skills/devcontainer-setup",
+    "commit": "196a9073ab",
+    "license": "CC-BY-SA-4.0"
+   },
+   {
+    "skill": "bash-defensive-patterns",
+    "load_when": "shell scripts used in pipelines",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/shell-scripting/skills/bash-defensive-patterns",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "shellcheck-configuration",
+    "load_when": "linting shell scripts",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/shell-scripting/skills/shellcheck-configuration",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "dependency-upgrade",
+    "load_when": "planning major dependency upgrades with staged rollout",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/framework-migration/skills/dependency-upgrade",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "documenter": [
+   {
+    "skill": "documentation-and-adrs",
+    "load_when": "writing ADRs, API docs, inline docs, and doc structure",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/documentation-and-adrs",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "doc-coauthoring",
+    "load_when": "a larger doc needs a structured draft-and-review workflow",
+    "repo": "https://github.com/getsentry/skills",
+    "path": "skills/doc-coauthoring",
+    "commit": "d12f250460",
+    "license": "Apache-2.0"
+   },
+   {
+    "skill": "architecture-decision-records",
+    "load_when": "recording a decision with context and alternatives",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/documentation-generation/skills/architecture-decision-records",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "openapi-spec-generation",
+    "load_when": "documenting an HTTP API as an OpenAPI spec",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/documentation-generation/skills/openapi-spec-generation",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "changelog-automation",
+    "load_when": "release notes and changelog from commits and PRs",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/documentation-generation/skills/changelog-automation",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "agents-md",
+    "load_when": "creating or tightening AGENTS.md or CLAUDE.md for a project",
+    "repo": "https://github.com/getsentry/skills",
+    "path": "skills/agents-md",
+    "commit": "d12f250460",
+    "license": "Apache-2.0"
+   },
+   {
+    "skill": "postmortem-writing",
+    "load_when": "documenting an incident",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/incident-response/skills/postmortem-writing",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   },
+   {
+    "skill": "writing-guidelines",
+    "load_when": "reviewing prose for clarity and consistency",
+    "repo": "https://github.com/vercel-labs/agent-skills",
+    "path": "skills/writing-guidelines",
+    "commit": "063bee94c3",
+    "license": "MIT (repo README / skill front matter)"
+   },
+   {
+    "skill": "avoid-ai-writing",
+    "load_when": "the draft reads machine-generated and needs a rewrite pass",
+    "repo": "https://github.com/wshobson/agents",
+    "path": "plugins/avoid-ai-writing/skills/avoid-ai-writing",
+    "commit": "0874a27b17",
+    "license": "MIT"
+   }
+  ],
+  "general-purpose": [
+   {
+    "skill": "using-agent-skills",
+    "load_when": "you need to discover which installed skill fits the task",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/using-agent-skills",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "context-engineering",
+    "load_when": "the task is large and context must be managed",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/context-engineering",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "planning-and-task-breakdown",
+    "load_when": "the task has several steps and needs ordering",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/planning-and-task-breakdown",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "incremental-implementation",
+    "load_when": "making changes across files",
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/incremental-implementation",
+    "commit": "aeac41d4d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "systematic-debugging",
+    "load_when": "something is broken and the cause is unknown",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/systematic-debugging",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   },
+   {
+    "skill": "verification-before-completion",
+    "load_when": "before reporting completion",
+    "repo": "https://github.com/obra/superpowers",
+    "path": "skills/verification-before-completion",
+    "commit": "2ce8aa15d0",
+    "license": "MIT"
+   }
+  ]
+ }
+}
