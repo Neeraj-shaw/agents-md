@@ -59,7 +59,7 @@ Installed in the skills folder (for Claude Code: `.claude/skills/<name>/SKILL.md
 | Skill | Read when |
 |---|---|
 | `security-and-hardening` | hardening handlers, input validation, auth, and secrets |
-| `security-review` | a code security review for injection, authz, crypto, secrets, and framework-specific flaws |
+| `security-audit` | a code security review or full audit for injection, authz, crypto, secrets, and framework-specific flaws |
 | `auth-implementation-patterns` | reviewing authentication and authorization design |
 | `secrets-management` | reviewing how secrets are stored, rotated, and injected |
 

@@ -317,14 +317,14 @@
    "license": "MIT"
   },
   {
-   "skill": "security-review",
+   "skill": "security-audit",
    "used_by": [
     "security-reviewer"
    ],
-   "repo": "https://github.com/getsentry/skills",
-   "path": "skills/security-review",
-   "commit": "d12f250460",
-   "license": "Apache-2.0"
+   "repo": "https://github.com/cloudflare/security-audit-skill",
+   "path": "skills/security-audit",
+   "commit": "c1c8a8c147",
+   "license": "MIT"
   },
   {
    "skill": "shipping-and-launch",
@@ -936,14 +936,6 @@
    "license": "Apache-2.0"
   },
   {
-   "skill": "security-audit",
-   "reason": "very large or specialist audit tooling (several are CC-BY-SA); restore for dedicated audits",
-   "repo": "https://github.com/cloudflare/security-audit-skill",
-   "path": "skills/security-audit",
-   "commit": "c1c8a8c147",
-   "license": "MIT"
-  },
-  {
    "skill": "semgrep",
    "reason": "very large or specialist audit tooling (several are CC-BY-SA); restore for dedicated audits",
    "repo": "https://github.com/trailofbits/skills",
@@ -1118,6 +1110,14 @@
    "path": "skills/writing-plans",
    "commit": "2ce8aa15d0",
    "license": "MIT"
+  },
+  {
+   "skill": "security-review",
+   "reason": "replaced by cloudflare security-audit-skill on user request (2026-11-13)",
+   "repo": "https://github.com/getsentry/skills",
+   "path": "skills/security-review",
+   "commit": "d12f250460",
+   "license": "Apache-2.0"
   }
  ]
 }
