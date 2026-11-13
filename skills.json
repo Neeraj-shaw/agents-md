@@ -109,7 +109,8 @@
   {
    "skill": "constraint-driven-development",
    "used_by": [
-    "architect"
+    "architect",
+    "decision-maker"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/constraint-driven-development",
@@ -151,6 +152,7 @@
    "skill": "documentation-and-adrs",
    "used_by": [
     "architect",
+    "decision-maker",
     "documenter"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
@@ -162,7 +164,7 @@
    "skill": "doubt-driven-development",
    "used_by": [
     "research",
-    "architect"
+    "decision-maker"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/doubt-driven-development",
@@ -219,6 +221,16 @@
    "path": "skills/git-workflow-and-versioning",
    "commit": "aeac41d4d0",
    "license": "MIT"
+  },
+  {
+   "skill": "impeccable",
+   "used_by": [
+    "ui-king"
+   ],
+   "repo": "pbakaus/impeccable",
+   "path": "plugin/skills/impeccable",
+   "commit": "c4cd1924c389f68d37c687d9c2bbf13f12547c41",
+   "license": "Apache-2.0"
   },
   {
    "skill": "incremental-implementation",
@@ -377,6 +389,16 @@
    "license": "MIT"
   },
   {
+   "skill": "tailwind-design-system",
+   "used_by": [
+    "ui-king"
+   ],
+   "repo": "https://github.com/wshobson/agents",
+   "path": "plugins/frontend-mobile-development/skills/tailwind-design-system",
+   "commit": "0874a27b17",
+   "license": "MIT"
+  },
+  {
    "skill": "test-driven-development",
    "used_by": [
     "coder",
@@ -408,6 +430,16 @@
    "repo": "https://github.com/wshobson/agents",
    "path": "plugins/accessibility-compliance/skills/wcag-audit-patterns",
    "commit": "0874a27b17",
+   "license": "MIT"
+  },
+  {
+   "skill": "web-interface-guidelines",
+   "used_by": [
+    "ui-king"
+   ],
+   "repo": "vercel-labs/web-interface-guidelines",
+   "path": "command.md",
+   "commit": "main@snapshot",
    "license": "MIT"
   },
   {
@@ -1000,14 +1032,6 @@
    "license": "CC-BY-SA-4.0"
   },
   {
-   "skill": "tailwind-design-system",
-   "reason": "stack-specific: restore only if you use that stack",
-   "repo": "https://github.com/wshobson/agents",
-   "path": "plugins/frontend-mobile-development/skills/tailwind-design-system",
-   "commit": "0874a27b17",
-   "license": "MIT"
-  },
-  {
    "skill": "terraform-module-library",
    "reason": "stack-specific: restore only if you use that stack",
    "repo": "https://github.com/wshobson/agents",
@@ -1049,7 +1073,7 @@
   },
   {
    "skill": "ui-ux-pro-max",
-   "reason": "very large or specialist audit tooling (several are CC-BY-SA); restore for dedicated audits",
+   "reason": "3.7 MB database plus Python scripts; side-by-side tests rated its output the most generic. Replaced by impeccable + frontend-design",
    "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
    "path": ".claude/skills/ui-ux-pro-max",
    "commit": "d14efff8ed",
@@ -1089,7 +1113,7 @@
   },
   {
    "skill": "web-design-guidelines",
-   "reason": "overlaps a kept skill",
+   "reason": "fetched its rules from the web on every run; replaced by a pinned local snapshot (web-interface-guidelines)",
    "repo": "https://github.com/vercel-labs/agent-skills",
    "path": "skills/web-design-guidelines",
    "commit": "063bee94c3",

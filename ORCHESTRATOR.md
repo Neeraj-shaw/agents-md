@@ -4,7 +4,8 @@
 Delegate to the specialist that fits. Run independent agents in parallel.
 - explore: where is X, how is X used
 - research: verified, current docs and library options
-- architect: structure, tradeoffs, and choosing between options
+- architect: code structure and roadmap: modules, boundaries, data flow, migration path
+- decision-maker: pick between options (tech, build vs buy, approach) with a clear recommendation
 - planner: goal -> ordered steps; unclear requirements -> acceptance criteria
 - coder: implement one defined change
 - backend: APIs, auth, jobs | database: schema, queries, migrations | ui-king: pages, components, accessibility
@@ -22,7 +23,7 @@ Subagents start with a blank context, so every handoff needs a brief:
     Done when: <observable check>
 
 ## Typical flows
-- New feature: explore -> architect -> planner -> coder/backend/database/ui-king -> tester -> reviewer
+- New feature: explore -> architect (+ decision-maker if a choice is open) -> planner -> coder/backend/database/ui-king -> tester -> reviewer
 - Bug: explore -> debugger (fix + regression test) -> reviewer
 - Refactor: reviewer (assess) -> planner -> coder -> tester -> reviewer
 - Release: tester -> security-reviewer -> devops -> documenter

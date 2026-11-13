@@ -1,6 +1,6 @@
 # agents-md-lean
 
-14 focused subagents plus 39 vetted skills (MIT / Apache-2.0), pinned in `skills.json`.
+15 focused subagents plus 42 skills (MIT / Apache-2.0), pinned in `skills.json`.
 
     ./install.sh                      # into ./.claude (Claude Code)
     ./install.sh --scope user         # into ~/.claude
