@@ -1,11 +1,13 @@
-# agents-md-lean
+# agents-md (v2.0 Universal Elite Edition)
 
-15 focused subagents plus 42 skills (MIT / Apache-2.0), pinned in `skills.json`.
+14 high-leverage, non-overlapping subagents plus 45 curated skills (MIT / Apache-2.0) with Complexity Tier Routing, Disjoint File Locks, and a 3-Strike Circuit Breaker.
 
-    ./install.sh                      # into ./.claude (Claude Code)
-    ./install.sh --scope user         # into ~/.claude
-    ./install.sh --agents debugger,tester
-    ./install.sh --dry-run
+```bash
+./install.sh                                  # into ./.claude (Claude Code)
+./install.sh --scope user --clean             # into ~/.claude
+./install.sh --harness cursor --scope user    # into ~/.cursor
+./install.sh --agents explore,coder,ui-king   # subset install
+./install.sh --dry-run
+```
 
-Then paste `ORCHESTRATOR.md` into your CLAUDE.md or AGENTS.md. See `CHANGES.md` for what was cut and why.
-Each agent lists its skills in a table and reads one only when it fits the task. Third-party skills are instructions and scripts: skim them before using in sensitive repos.
+Then copy `ORCHESTRATOR.md` into your project's `CLAUDE.md`, `AGENTS.md`, or `.cursorrules`.

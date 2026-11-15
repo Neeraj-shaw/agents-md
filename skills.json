@@ -16,9 +16,7 @@
  "kept": [
   {
    "skill": "agents-md",
-   "used_by": [
-    "documenter"
-   ],
+   "used_by": [],
    "repo": "https://github.com/getsentry/skills",
    "path": "skills/agents-md",
    "commit": "d12f250460",
@@ -27,6 +25,7 @@
   {
    "skill": "ai-debt-detector",
    "used_by": [
+    "coder",
     "reviewer"
    ],
    "repo": "https://github.com/wshobson/agents",
@@ -37,6 +36,7 @@
   {
    "skill": "api-and-interface-design",
    "used_by": [
+    "ai-engineer",
     "architect",
     "backend"
    ],
@@ -59,7 +59,7 @@
    "skill": "auth-implementation-patterns",
    "used_by": [
     "backend",
-    "security-reviewer"
+    "security-auditor"
    ],
    "repo": "https://github.com/wshobson/agents",
    "path": "plugins/developer-essentials/skills/auth-implementation-patterns",
@@ -69,7 +69,7 @@
   {
    "skill": "changelog-automation",
    "used_by": [
-    "documenter"
+    "devops"
    ],
    "repo": "https://github.com/wshobson/agents",
    "path": "plugins/documentation-generation/skills/changelog-automation",
@@ -99,7 +99,8 @@
   {
    "skill": "code-simplification",
    "used_by": [
-    "coder"
+    "coder",
+    "reviewer"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/code-simplification",
@@ -109,8 +110,7 @@
   {
    "skill": "constraint-driven-development",
    "used_by": [
-    "architect",
-    "decision-maker"
+    "architect"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/constraint-driven-development",
@@ -120,8 +120,8 @@
   {
    "skill": "context-engineering",
    "used_by": [
-    "explore",
-    "research"
+    "ai-engineer",
+    "explore"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/context-engineering",
@@ -141,7 +141,8 @@
   {
    "skill": "deprecation-and-migration",
    "used_by": [
-    "architect"
+    "architect",
+    "research"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/deprecation-and-migration",
@@ -152,8 +153,7 @@
    "skill": "documentation-and-adrs",
    "used_by": [
     "architect",
-    "decision-maker",
-    "documenter"
+    "devops"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/documentation-and-adrs",
@@ -163,8 +163,7 @@
   {
    "skill": "doubt-driven-development",
    "used_by": [
-    "research",
-    "decision-maker"
+    "architect"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/doubt-driven-development",
@@ -182,10 +181,22 @@
    "license": "MIT"
   },
   {
+   "skill": "edge-and-serverless-patterns",
+   "used_by": [
+    "backend",
+    "database"
+   ],
+   "repo": "https://github.com/Neeraj-shaw/agents-md",
+   "path": "skills/edge-and-serverless-patterns",
+   "commit": "in-repo (v2.0 authored)",
+   "license": "MIT"
+  },
+  {
    "skill": "error-handling-patterns",
    "used_by": [
-    "coder",
-    "backend"
+    "ai-engineer",
+    "backend",
+    "coder"
    ],
    "repo": "https://github.com/wshobson/agents",
    "path": "plugins/developer-essentials/skills/error-handling-patterns",
@@ -235,7 +246,6 @@
   {
    "skill": "incremental-implementation",
    "used_by": [
-    "planner",
     "coder"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
@@ -254,9 +264,22 @@
    "license": "MIT"
   },
   {
+   "skill": "mcp-and-agent-engineering",
+   "used_by": [
+    "ai-engineer",
+    "security-auditor"
+   ],
+   "repo": "https://github.com/Neeraj-shaw/agents-md",
+   "path": "skills/mcp-and-agent-engineering",
+   "commit": "in-repo (v2.0 authored)",
+   "license": "MIT"
+  },
+  {
    "skill": "observability-and-instrumentation",
    "used_by": [
-    "backend"
+    "ai-engineer",
+    "backend",
+    "devops"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/observability-and-instrumentation",
@@ -285,6 +308,16 @@
    "license": "MIT"
   },
   {
+   "skill": "polyglot-backend-patterns",
+   "used_by": [
+    "backend"
+   ],
+   "repo": "https://github.com/Neeraj-shaw/agents-md",
+   "path": "skills/polyglot-backend-patterns",
+   "commit": "in-repo (v2.0 authored)",
+   "license": "MIT"
+  },
+  {
    "skill": "postgresql-table-design",
    "used_by": [
     "database"
@@ -297,8 +330,7 @@
   {
    "skill": "postmortem-writing",
    "used_by": [
-    "devops",
-    "documenter"
+    "devops"
    ],
    "repo": "https://github.com/wshobson/agents",
    "path": "plugins/incident-response/skills/postmortem-writing",
@@ -308,8 +340,8 @@
   {
    "skill": "secrets-management",
    "used_by": [
-    "security-reviewer",
-    "devops"
+    "devops",
+    "security-auditor"
    ],
    "repo": "https://github.com/wshobson/agents",
    "path": "plugins/cicd-automation/skills/secrets-management",
@@ -319,9 +351,9 @@
   {
    "skill": "security-and-hardening",
    "used_by": [
+    "ai-engineer",
     "backend",
-    "reviewer",
-    "security-reviewer"
+    "security-auditor"
    ],
    "repo": "https://github.com/addyosmani/agent-skills",
    "path": "skills/security-and-hardening",
@@ -331,7 +363,7 @@
   {
    "skill": "security-audit",
    "used_by": [
-    "security-reviewer"
+    "security-auditor"
    ],
    "repo": "https://github.com/cloudflare/security-audit-skill",
    "path": "skills/security-audit",
@@ -413,9 +445,15 @@
   {
    "skill": "verification-before-completion",
    "used_by": [
+    "ai-engineer",
+    "backend",
     "coder",
+    "database",
     "debugger",
-    "tester"
+    "devops",
+    "reviewer",
+    "tester",
+    "ui-king"
    ],
    "repo": "https://github.com/obra/superpowers",
    "path": "skills/verification-before-completion",
@@ -445,8 +483,8 @@
   {
    "skill": "webapp-testing",
    "used_by": [
-    "ui-king",
-    "tester"
+    "tester",
+    "ui-king"
    ],
    "repo": "https://github.com/anthropics/skills",
    "path": "skills/webapp-testing",
